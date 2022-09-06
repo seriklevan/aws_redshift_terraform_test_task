@@ -120,7 +120,7 @@ resource "aws_iam_role" "redshift_test_role" {
     "Version" : "2012-10-17",
     "Statement" : {
       "Effect" : "Allow",
-      "Principal" : { "Service" : "s3.amazonaws.com" },
+      "Principal" : { "Service" : "ec2.amazonaws.com" },
       "Action" : "sts:AssumeRole"
     }
   })
